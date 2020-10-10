@@ -10,4 +10,5 @@ class ConfigInit:
     SecretKey = 'xxxxxx'
     qiniu_domain = 'xxxxxx'
     qiniu_house = 'xxxxx'
+    dingding_url = 'xxxx'
 

@@ -1,6 +1,7 @@
 #coding=utf-8
 import os
 from config import globalparam
+from config.basic_config import ConfigInit
 from requests import request
 import time
 import shutil
@@ -63,10 +64,10 @@ class SslSendReport:
         json = {
             "msgtype": "text",
             "text": {
-                "content": "提示：UI自动化运行完成，共耗时{} 秒，报告路径 http://10.0.10.36:9080/".format(time_consuming)
+                "content": "提示：UI自动化运行完成，共耗时{} 秒，报告路径 xxxxx".format(time_consuming)
             }
         }
-        url = 'https://oapi.dingtalk.com/robot/send?access_token=8b96acdd9c075788919c2bff788b242a110afc0608665521af900e92ad8e987f'
+        url = ConfigInit.dingding_url
         try:
             r = request('post', url, json=json)
             logger.info('发送警报成功')
