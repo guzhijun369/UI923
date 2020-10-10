@@ -30,6 +30,8 @@ common   一些公共方法
     mytest        unittest基类，封装一些每个用例前后都要进行的操作,可以写多个基类，区分场景继承
 
     pyselenium    selenium方法、定位二次封装，后续有需要其他定位可添加到里面自定义
+    
+    send_report   部署服务器上时发送测试报告
 
     sendmail      发送测试报告方法，由于国内邮件服务经常被封，采用了国外的mailgun  smtp
 
